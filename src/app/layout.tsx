@@ -1,5 +1,7 @@
 import Head from 'next/head';
 import './globals.css'
+import Header from '@/components/Header';
+import Publi from '@/components/Publi';
 
 export const metadata = {
   title: 'Next.js',
@@ -21,7 +23,11 @@ export default function RootLayout({
         <title>{metadata.title}</title>
         <meta name="description" content={metadata.description} />
       </Head>
-      <body>{children}</body>
+      <body>
+        <Header/>
+        <Publi/>
+        {children}
+      </body>
     </html>
   )
 }
