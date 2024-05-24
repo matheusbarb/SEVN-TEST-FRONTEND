@@ -1,0 +1,135 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.FirstTitle {
+  /* ECONOMIA */
+  text-transform: uppercase;
+  position: absolute;
+  width: 64px;
+  height: 16px;
+  left: 150px;
+  top: 360px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #ff2d2d;
+}
+
+.FirstContent {
+  /* Quem não tiver valores a receber nesta etapa poderá ter nas próximas fases, diz BC */
+  position: absolute;
+  width: 580px;
+  height: 300px;
+  left: 150px;
+  top: 381px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 60px;
+  /* or 103% */
+  color: #000000;
+}
+
+.FirstImage {
+  /* Rectangle 20 */
+  position: absolute;
+  width: 280px;
+  height: 190px;
+  left: 780px;
+  top: 360px;
+  color: #ebeff1;
+  border-radius: 10px;
+}
+
+.SecondTitle {
+  /* EDUCAÇÃO */
+  text-transform: uppercase;
+  position: absolute;
+  width: 64px;
+  height: 16px;
+  left: 780px;
+  top: 565px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #24538b;
+}
+
+.SecondContent {
+    /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
+position: absolute;
+width: 280px;
+height: 78px;
+left: 780px;
+top: 589px;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+/* or 130% */
+color: #000000;
+}
+
+.SecondImage {
+    /* Rectangle 21 */
+position: absolute;
+width: 280px;
+height: 190px;
+left: 1100px;
+top: 360px;
+color: #ebeff1;
+border-radius: 10px;
+}
+
+.ThirdTitle {
+    /* DIVERSIDADES */
+text-transform: uppercase;
+position: absolute;
+width: 89px;
+height: 16px;
+left: 1100px;
+top: 565px;
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 16px;
+/* identical to box height */
+display: flex;
+align-items: center;
+color: #248B28;
+}
+
+.ThirdContent {
+    /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados hoje */
+position: absolute;
+width: 280px;
+height: 78px;
+left: 1100px;
+top: 589px;
+
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 26px;
+/* or 130% */
+color: #000000;
+
+
+}
