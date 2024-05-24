@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  
 }
 
 .column {
@@ -73,63 +72,61 @@
 }
 
 .SecondContent {
-    /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
-position: absolute;
-width: 280px;
-height: 78px;
-left: 850px;
-top: 589px;
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 26px;
-/* or 130% */
-color: #000000;
+  /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
+  position: absolute;
+  width: 280px;
+  height: 78px;
+  left: 850px;
+  top: 589px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
+  color: #000000;
 }
 
 .SecondImage {
-    /* Rectangle 21 */
-position: absolute;
-width: 280px;
-height: 190px;
-left: 1150px;
-top: 360px;
-color: #ebeff1;
-border-radius: 10px;
+  /* Rectangle 21 */
+  position: absolute;
+  width: 280px;
+  height: 190px;
+  left: 1150px;
+  top: 360px;
+  color: #ebeff1;
+  border-radius: 10px;
 }
 
 .ThirdTitle {
-    /* DIVERSIDADES */
-text-transform: uppercase;
-position: absolute;
-width: 89px;
-height: 16px;
-left: 1150px;
-top: 565px;
-font-style: normal;
-font-weight: 700;
-font-size: 12px;
-line-height: 16px;
-/* identical to box height */
-display: flex;
-align-items: center;
-color: #248B28;
+  /* DIVERSIDADES */
+  text-transform: uppercase;
+  position: absolute;
+  width: 89px;
+  height: 16px;
+  left: 1150px;
+  top: 565px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  /* identical to box height */
+  display: flex;
+  align-items: center;
+  color: #248b28;
 }
 
 .ThirdContent {
-    /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados hoje */
-position: absolute;
-width: 280px;
-height: 78px;
-left: 1150px;
-top: 589px;
+  /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados hoje */
+  position: absolute;
+  width: 280px;
+  height: 78px;
+  left: 1150px;
+  top: 589px;
 
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 26px;
-/* or 130% */
-color: #000000;
-
-
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  /* or 130% */
+  color: #000000;
 }
