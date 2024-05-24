@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "@/styles/firstEndpoint.module.css"
+import Link from "next/link";
 
 interface Article {
   id: number;
@@ -28,7 +29,9 @@ const First = () => {
         <>
             <div className={styles.column}>
           <h2 className={styles.FirstTitle}>{news[0].title}</h2>
+          <Link href="/details">
           <p className={styles.FirstContent}>{news[0].content}</p>
+          </Link>
           </div>
           <div className={styles.column}>
           {news[0].imagemUrl && (
@@ -41,7 +44,9 @@ const First = () => {
             />
           )}
           <h2 className={styles.SecondTitle}>{news[1].title}</h2>
+          <Link href="/details">
           <p className={styles.SecondContent}>{news[1].content}</p>
+          </Link>
           </div>
           <div className={styles.column}>
           {news[1].imagemUrl && (
@@ -54,7 +59,9 @@ const First = () => {
             />
           )}
           <h2 className={styles.ThirdTitle}>{news[2].title}</h2>
+          <Link href="/details">
           <p className={styles.ThirdContent}>{news[2].content}</p>
+          </Link>
           </div>
         </>
       )}
