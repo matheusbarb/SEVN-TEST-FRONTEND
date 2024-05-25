@@ -27,7 +27,6 @@ const Details = () => {
   });
 
   useEffect(() => {
-    
     axios
       .get("http://localhost:3001/news")
       .then((response) => {
@@ -41,7 +40,6 @@ const Details = () => {
         console.error("Erro ao obter notícias:", error);
       });
 
-    
     axios
       .get("http://localhost:3001/article")
       .then((response) => {
@@ -52,6 +50,8 @@ const Details = () => {
       });
   }, []);
 
+  const paragraphs = article.content.split("\n");
+
   return (
     <div>
       <Link href="/">
@@ -60,12 +60,21 @@ const Details = () => {
         </div>
       </Link>
 
-      <p> {news.title}</p>
-      <p> {news.content}</p>
-      <p> {article.subtitle}</p>
-      <p> {article.data}</p>
-
-      <p> {article.content}</p>
+      <p className={styles.title}> {news.title}</p>
+      <p className={styles.content}> {news.content}</p>
+      <p className={styles.subtitle}> {article.subtitle}</p>
+      <p className={styles.data}> {article.data}</p>
+      <div className={styles.container}>
+        <h1 className={styles.text}>Publicidade</h1>
+        </div>
+        <div className={styles.articleContainer}>
+      {paragraphs.map((paragraph, index) => (
+        <p key={index} className={styles.paragraph}>
+          {paragraph}
+        </p>
+    
+      ))}
+       </div>
     </div>
   );
 };
