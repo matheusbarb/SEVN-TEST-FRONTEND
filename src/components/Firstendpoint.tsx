@@ -34,51 +34,51 @@ const First = () => {
               <h2 className={styles.FirstTitle}>{news[0].title}</h2>
             </div>
             <div>
-            <Link href="/details">
-              <p className={styles.FirstContent}>{news[0].content}</p>
-            </Link>
+              <Link href="/details">
+                <p className={styles.FirstContent}>{news[0].content}</p>
+              </Link>
             </div>
           </div>
           <div className={styles.column}>
             {news[0].imagemUrl && (
               <div>
-              <Image
-                className={styles.FirstImage}
-                src={news[0].imagemUrl}
-                width={280}
-                height={190}
-                alt={news[0].title}
-              />
+                <Image
+                  className={styles.FirstImage}
+                  src={news[0].imagemUrl}
+                  width={280}
+                  height={190}
+                  alt={news[0].title}
+                />
               </div>
             )}
             <div>
-            <h2 className={styles.SecondTitle}>{news[1].title}</h2>
+              <h2 className={styles.SecondTitle}>{news[1].title}</h2>
             </div>
             <div>
-            <Link href="/details">
-              <p className={styles.SecondContent}>{news[1].content}</p>
-            </Link>
+              <Link href="/details">
+                <p className={styles.SecondContent}>{news[1].content}</p>
+              </Link>
             </div>
           </div>
           <div className={styles.column}>
             {news[1].imagemUrl && (
               <div>
-              <Image
-                className={styles.SecondImage}
-                src={news[1].imagemUrl}
-                width={280}
-                height={190}
-                alt={news[1].title}
-              />
+                <Image
+                  className={styles.SecondImage}
+                  src={news[1].imagemUrl}
+                  width={280}
+                  height={190}
+                  alt={news[1].title}
+                />
               </div>
             )}
             <div>
-            <h2 className={styles.ThirdTitle}>{news[2].title}</h2>
+              <h2 className={styles.ThirdTitle}>{news[2].title}</h2>
             </div>
             <div>
-            <Link href="/details">
-              <p className={styles.ThirdContent}>{news[2].content}</p>
-            </Link>
+              <Link href="/details">
+                <p className={styles.ThirdContent}>{news[2].content}</p>
+              </Link>
             </div>
           </div>
         </>

@@ -86,11 +86,13 @@ const Details = () => {
         <Publi />
       </div>
       <div className={styles.articleContainer}>
-        {paragraphs.slice(0, showMore || !isMobile ? paragraphs.length : 3).map((paragraph, index) => (
-          <p key={index} className={styles.paragraph}>
-            {paragraph}
-          </p>
-        ))}
+        {paragraphs
+          .slice(0, showMore || !isMobile ? paragraphs.length : 3)
+          .map((paragraph, index) => (
+            <p key={index} className={styles.paragraph}>
+              {paragraph}
+            </p>
+          ))}
       </div>
       {isMobile && (
         <button className={styles.readMoreButton} onClick={toggleShowMore}>
