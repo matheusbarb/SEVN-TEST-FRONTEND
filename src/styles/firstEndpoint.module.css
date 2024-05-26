@@ -7,48 +7,48 @@
 .column {
   display: flex;
   flex-direction: column;
+  width: 1680px;
 }
 
 .FirstTitle {
   /* ECONOMIA */
   text-transform: uppercase;
-  position: absolute;
+  margin-top: 80px;
+  margin-left: 255px;
   width: 64px;
   height: 16px;
-  left: 250px;
-  top: 360px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height */
   display: flex;
   align-items: center;
   color: #ff2d2d;
+  
 }
 
 .FirstContent {
   /* Quem não tiver valores a receber nesta etapa poderá ter nas próximas fases, diz BC */
-  position: absolute;
+  margin-left: 250px;
   width: 580px;
   height: 300px;
-  left: 250px;
-  top: 381px;
   font-style: normal;
   font-weight: 700;
   font-size: 58px;
   line-height: 60px;
   /* or 103% */
   color: #000000;
+  text-decoration: #fff;
 }
 
 .FirstImage {
   /* Rectangle 20 */
-  position: absolute;
+  
   width: 280px;
   height: 190px;
-  left: 850px;
-  top: 360px;
+  margin-left: -850px;
+  margin-top: 305px;
   color: #ebeff1;
   border-radius: 10px;
 }
@@ -56,13 +56,13 @@
 .SecondTitle {
   /* EDUCAÇÃO */
   text-transform: uppercase;
-  position: absolute;
+  
   width: 64px;
   height: 16px;
-  left: 850px;
-  top: 565px;
+  margin-left: -850px;
+  margin-top: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height */
@@ -73,11 +73,11 @@
 
 .SecondContent {
   /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
-  position: absolute;
+  
   width: 280px;
   height: 78px;
-  left: 850px;
-  top: 589px;
+  margin-left: -850px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -88,11 +88,11 @@
 
 .SecondImage {
   /* Rectangle 21 */
-  position: absolute;
+  
   width: 280px;
   height: 190px;
-  left: 1150px;
-  top: 360px;
+  margin-left: -2254px;
+  margin-top: 305px;
   color: #ebeff1;
   border-radius: 10px;
 }
@@ -100,13 +100,13 @@
 .ThirdTitle {
   /* DIVERSIDADES */
   text-transform: uppercase;
-  position: absolute;
+  
   width: 89px;
   height: 16px;
-  left: 1150px;
-  top: 565px;
+  margin-left: -2250px;
+  margin-top: 15px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 12px;
   line-height: 16px;
   /* identical to box height */
@@ -117,16 +117,197 @@
 
 .ThirdContent {
   /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados hoje */
-  position: absolute;
+  
   width: 280px;
   height: 78px;
-  left: 1150px;
-  top: 589px;
-
+  margin-left: -2250px;
+  margin-top: 10px;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   /* or 130% */
   color: #000000;
+}
+
+
+
+@media (max-width: 1200px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .column {
+    width: auto; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .FirstTitle {
+    margin-left: 10px;
+
+  }
+
+  .FirstContent{
+    margin-left: 10px;
+    font-size: 38px;
+    width: 350px;
+  }
+  .FirstImage {
+    /* Rectangle 20 */
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+  .SecondTitle{
+    margin-left: 10px;
+  }
+
+  .SecondContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
+
+  .SecondImage{
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+
+  .ThirdTitle{
+    margin-left: 10px;
+  }
+
+  .ThirdContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .column {
+    width: auto; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .FirstTitle {
+    margin-left: 10px;
+
+  }
+
+  .FirstContent{
+    margin-left: 10px;
+    font-size: 38px;
+    width: 350px;
+  }
+  .FirstImage {
+    /* Rectangle 20 */
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+  .SecondTitle{
+    margin-left: 10px;
+  }
+
+  .SecondContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
+
+  .SecondImage{
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+
+  .ThirdTitle{
+    margin-left: 10px;
+  }
+
+  .ThirdContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .column {
+    width: auto; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .FirstTitle {
+    margin-left: 10px;
+
+  }
+
+  .FirstContent{
+    margin-left: 10px;
+    font-size: 38px;
+    width: 350px;
+  }
+  .FirstImage {
+    /* Rectangle 20 */
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+  .SecondTitle{
+    margin-left: 10px;
+  }
+
+  .SecondContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
+
+  .SecondImage{
+    width: 280px;
+    height: 190px;
+    margin-left: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+  }
+
+  .ThirdTitle{
+    margin-left: 10px;
+  }
+
+  .ThirdContent{
+    margin-left: 10px;
+    font-size: 18px;
+    width: 350px;
+  }
 }

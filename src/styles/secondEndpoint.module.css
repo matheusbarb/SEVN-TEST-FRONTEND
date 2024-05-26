@@ -1,222 +1,82 @@
 .container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 colunas com largura igual */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 20px;
 }
 
-.materia1 {
-  /* Quem não tiver valores a receber poderá ter nas próximas fases, diz BC */
-  position: absolute;
-  width: 275px;
+.materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8 {
+  width: 290px;
   height: 40px;
-  left: 260px;
-  top: 750px;
+  margin-top: 30px;
   font-style: normal;
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
   color: #000;
-  /* or 133% */
+  text-decoration: none;
+  padding-left: 10px;
+  border-radius: 2px;
 }
 
-.materia1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #ff2d2d;
-  padding: 1px;
-  border-radius: 10px;
+.materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8 {
+  border-left: 5px solid #FF2D2D;
 }
 
-.materia2 {
-  /* Quem não tiver valores a receber poderá ter nas próximas fases, diz BC */
-  position: absolute;
-  width: 275px;
-  height: 40px;
-  left: 260px;
-  top: 820px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
+.materia5, .materia6 {
+  border-left: 5px solid #24538B;
+  width: 280px;
 }
 
-.materia2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #ff2d2d;
-  padding: 1px;
-  border-radius: 10px;
+.materia7, .materia8 {
+  border-left: 5px solid #248B28;
+  width: 280px;
 }
 
-.materia3 {
-  /* Quem não tiver valores a receber poderá ter nas próximas fases, diz BC */
-  position: absolute;
-  width: 275px;
-  height: 40px;
-  left: 560px;
-  top: 750px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
+
+.materia1, .materia3, .materia5, .materia7 {
+  margin-top: 80px;
 }
 
-.materia3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #ff2d2d;
-  padding: 1px;
-  border-radius: 10px;
+.materia2, .materia4, .materia6, .materia8 {
+  margin-top: 30px;
 }
 
-.materia4 {
-  /* Quem não tiver valores a receber poderá ter nas próximas fases, diz BC */
-  position: absolute;
-  width: 275px;
-  height: 40px;
-  left: 560px;
-  top: 820px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
 
-  color: #000000;
+.materia1, .materia2 {
+  margin-left: 260px;
 }
 
-.materia4::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #ff2d2d;
-  padding: 1px;
-  border-radius: 10px;
+.materia5, .materia6 {
+  margin-left: -90px;
 }
 
-.materia5 {
-  /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 860px;
-  top: 750px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
+.materia7, .materia8 {
+  margin-left: -180px;
 }
 
-.materia5::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #24538b;
-  padding: 1px;
-  border-radius: 10px;
+
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr); 
+  }
 }
 
-.materia6 {
-  /* Datafolha: Após ensino remoto, 76% precisam de reforço na alfabetização */
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 860px;
-  top: 820px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8 {
+    margin-left: 0; 
+  }
 }
 
-.materia6::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #24538b;
-  padding: 1px;
-  border-radius: 10px;
-}
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; 
+  }
 
-.materia7 {
-  /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados */
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 1160px;
-  top: 750px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
-}
-
-.materia7::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #248b28;
-  padding: 1px;
-  border-radius: 10px;
-}
-
-.materia8 {
-  /* Lotomania: com prêmio de R$ 5 milhões, veja os números sorteados */
-  position: absolute;
-  width: 265px;
-  height: 40px;
-  left: 1160px;
-  top: 820px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 20px;
-  /* or 133% */
-  color: #000000;
-}
-
-.materia8::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -10px;
-  width: 2px;
-  height: 105%;
-  background-color: #248b28;
-  padding: 1px;
-  border-radius: 10px;
+  .materia1, .materia2, .materia3, .materia4, .materia5, .materia6, .materia7, .materia8 {
+    margin-left: 0; 
+  }
 }

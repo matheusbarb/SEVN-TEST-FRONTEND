@@ -3,11 +3,8 @@
   margin: 0 auto;
   padding: 20px;
   margin-top: 30px;
-  width: 1180px;
+  width: 70%;
   height: 190px;
-  margin-left: 250px;
-  margin-right: 250px;
-
   background: #ebeff1;
   border-radius: 10px;
 }
@@ -19,8 +16,6 @@
   margin-top: 50px;
   width: 185px;
   height: 43px;
-  left: 560px;
-  top: 70px;
   font-style: normal;
   font-weight: 700;
   font-size: 33px;
@@ -30,4 +25,54 @@
   align-items: center;
   text-align: center;
   color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 50%;
+    height: auto; 
+    padding: 15px; 
+  }
+
+  .text {
+    font-size: 30px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    width: 45%;  
+     
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 50%;
+    height: auto; 
+    padding: 15px; 
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    margin-top: 20px; 
+    width: 45%;  
+     
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 90%;
+    margin-left: 10px;
+    height: auto; 
+    
+  }
+
+  .text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 20px; 
+    width: 45%; 
+  }
 }
